@@ -1,8 +1,8 @@
 // Get the elements
 const styledCheckbox = document.getElementById("styled-Checkbox");
 
-// Introduce lister for the on change event (JS handler for default and large)
-// Handle the side-effect of changing status of the styled checkbox
+// Introduce listner(s) for the on change event (JS handler for styled checkbox)
+// Handle the side-effect of changing status (checked/unchecked) of the styled checkbox
 styledCheckbox.addEventListener("change", (event) => {
   if (event.currentTarget.checked) {
     defaultCheckbox.checked = true;
