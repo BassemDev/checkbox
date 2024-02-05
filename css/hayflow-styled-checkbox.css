@@ -1,0 +1,66 @@
+@import url("hayflow-lib.css");
+
+label {
+  /* Element nature */
+  display: inline-block;
+
+  /* Outer-Inner spacing */
+  margin: var(--small-margin-spacing);
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--white);
+  /* Not removed via appearance */
+  margin: 0;
+
+  /* Layout and size styles */
+  display: grid;
+  place-content: center;
+  outline-offset: 5px;
+
+  /* Inner styles */
+  color: white;
+  cursor: pointer;
+}
+
+.styled-Checkbox-style {
+  /* Layout and Size styles */
+  width: 1.7rem;
+  height: 1.7rem;
+  outline-color: var(--large-checkbox-outline-color);
+
+  /* Box styles */
+  border: 0.08rem solid var(--custom-checkbox-border-color);
+  border-radius: 0.25rem;
+}
+
+.styled-Checkbox-style::before {
+  /* Layout and size styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "✓";
+  width: 1.5rem;
+  height: 1.5rem;
+
+  /* Box styles */
+  border: 0.08rem solid var(--custom-checkbox-border-color);
+  border-radius: 0.25rem;
+  box-shadow: inset 6em 6em var(--custom-checkbox-background-color);
+
+  /* Animation styles */
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+
+  /* Inner styles */
+  font-size: var(--medium-size);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}

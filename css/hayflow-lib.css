@@ -1,0 +1,19 @@
+/* CSS declaration in the root level (Define color and declarations) */
+:root {
+  /* Size */
+  --medium-size: 22px;
+  --large-size: 32px;
+  /* Color definition */
+  --white: #ffff;
+  --default-checkbox-color: #2d75ff;
+  --custom-checkbox-background-color: #000;
+  --default-checkbox-border-color: #808080;
+  --custom-checkbox-border-color: #000;
+  --large-checkbox-outline-color: #4051fe;
+
+  /* Margin defintion */
+  --small-margin-spacing: 8px;
+  --normal-margin-spacing: 16px;
+  --double-margin-spacing: 24px;
+  --large-margin-spacing: 32px;
+}
