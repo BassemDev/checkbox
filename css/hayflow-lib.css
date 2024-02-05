@@ -1,9 +1,14 @@
+/* The following file define the general design/styling of the elements  
+which could be commun for all the components cross the views layer.
+*/
+
 /* CSS declaration in the root level (Define color and declarations) */
 :root {
-  /* Size */
+  /* Sizes */
   --medium-size: 22px;
   --large-size: 32px;
-  /* Color definition */
+
+  /* Colors definition */
   --white: #ffff;
   --default-checkbox-color: #2d75ff;
   --custom-checkbox-background-color: #000;
@@ -11,7 +16,7 @@
   --custom-checkbox-border-color: #000;
   --large-checkbox-outline-color: #4051fe;
 
-  /* Margin defintion */
+  /* Margins defintion */
   --small-margin-spacing: 8px;
   --normal-margin-spacing: 16px;
   --double-margin-spacing: 24px;

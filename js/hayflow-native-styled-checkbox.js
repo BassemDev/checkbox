@@ -1,10 +1,8 @@
-// Vanilla Javascript
-
 // Get the elements
 const defaultCheckbox = document.getElementById("default-checkbox");
 const largeCheckbox = document.getElementById("large-checkbox");
 
-// Introduce lister for the on change event (JS handler for default and large)
+// Introduce listner(s) for the on change event (JS handler for default and large checkbox)
 // Handle the side-effect of changing status of the default checkbox
 defaultCheckbox.addEventListener("change", (event) => {
   if (event.currentTarget.checked) {
